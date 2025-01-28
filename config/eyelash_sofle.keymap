@@ -211,8 +211,8 @@
             bindings = <
 &kp CAPSLOCK    &kp N1                &kp N2                &kp N3                  &kp N4                    &kp N5         &kp UP_ARROW     &kp N6       &kp N7                     &kp N8                   &kp N9                 &kp N0                 &kp DELETE
 &kp TAB         &kp Q                 &kp W                 &kp E                   &kp R                     &kp T          &kp DOWN_ARROW   &kp Y        &kp U                      &kp I                    &kp O                  &kp APOSTROPHE         &kp BACKSPACE
-&kp LEFT_SHIFT  &HRM_LEFT LEFT_GUI A  &HRM_LEFT LEFT_ALT S  &HRM_LEFT LEFT_SHIFT D  &HRM_LEFT LEFT_CONTROL F  &kp G          &kp LEFT_ARROW   &kp H        &HRM_RIGHT LEFT_CONTROL J  &HRM_RIGHT LEFT_SHIFT K  &HRM_RIGHT LEFT_ALT L  &HRM_RIGHT LEFT_GUI P  &mt RIGHT_SHIFT APOS
-&kp LCTRL       &kp Z                 &kp X                 &kp C                   &kp V                     &kp B          &kp RIGHT_ARROW  &kp N        &kp M                      &comma_ex                &period_ex             &question_ex           &mt RCTRL BACKSLASH
+&kp LEFT_SHIFT  &HRM_LEFT LEFT_GUI A  &HRM_LEFT LEFT_ALT S  &HRM_LEFT LEFT_SHIFT D  &HRM_LEFT LEFT_CONTROL F  &kp G          &kp LEFT_ARROW   &kp H        &HRM_RIGHT LEFT_CONTROL J  &HRM_RIGHT LEFT_SHIFT K  &HRM_RIGHT LEFT_ALT L  &HRM_RIGHT LEFT_GUI P  &mt RIGHT_SHIFT SLASH
+&kp LCTRL       &kp Z                 &kp X                 &kp C                   &kp V                     &kp B          &kp RIGHT_ARROW  &kp N        &kp M                      &comma_ex                &period_ex             &question_ex           &kp BACKSLASH
 &kp C_MUTE      &kp ESCAPE            &sk LEFT_GUI          &sk LEFT_ALT            &mo 1                     &lt 1 SPACE    &kp ENTER        &lt 1 SPACE  &kp ENTER                  &kp LEFT_ARROW           &kp RIGHT_ARROW        &kp BACKSPACE
             >;
 
@@ -222,11 +222,11 @@
 
         Ex {
             bindings = <
-&trans      &kp F1        &kp F2          &kp F3         &kp F4         &kp F5          &mmv MOVE_UP     &kp F6     &kp F7    &kp F8      &kp F9     &kp F10           &mo 2
-&trans      &kp NUMBER_6  &kp NUMBER_7    &kp NUMBER_8   &kp NUMBER_9   &kp NUMBER_0    &mmv MOVE_DOWN   &kp PG_UP  &kp HOME  &kp UP      &kp END    &kp MINUS         &kp EQUAL
-&trans      &kp TILDE     &kp MINUS       &kp LS(SLASH)  &kp BACKSLASH  &kp PLUS        &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT  &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans      &kp GRAVE     &kp UNDERSCORE  &trans         &trans         &kp EQUAL       &mmv MOVE_RIGHT  &trans     &trans    &kp INSERT  &kp F11    &kp F12           &kp PRINTSCREEN
-&kp C_MUTE  &trans        &kp BACKSPACE   &trans         &trans         &kp RET         &mkp LCLK        &trans     &trans    &trans      &trans     &trans
+&trans      &kp F1        &kp F2          &kp F3        &kp F4         &kp F5          &mmv MOVE_UP     &kp F6     &kp F7    &kp F8      &kp F9     &kp F10           &mo 2
+&trans      &kp NUMBER_6  &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9   &kp NUMBER_0    &mmv MOVE_DOWN   &kp PG_UP  &kp HOME  &kp UP      &kp END    &kp MINUS         &kp EQUAL
+&trans      &kp TILDE     &kp MINUS       &kp SLASH     &kp BACKSLASH  &kp PLUS        &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT  &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans      &kp GRAVE     &kp UNDERSCORE  &trans        &trans         &kp EQUAL       &mmv MOVE_RIGHT  &trans     &trans    &kp INSERT  &kp F11    &kp F12           &kp PRINTSCREEN
+&kp C_MUTE  &trans        &kp BACKSPACE   &trans        &trans         &kp RET         &mkp LCLK        &trans     &trans    &trans      &trans     &trans
             >;
 
             display-name = "Ex";
