@@ -48,9 +48,9 @@ layers:
   - $$mdi:arrow-right-bold$$
   - N
   - M
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
-  - {t: /, s: '?'}
+  - {t: ',', s: ;}
+  - {t: ., s: ':'}
+  - {t: '?', s: '!'}
   - {t: \, h: '$$mdi:apple-keyboard-control$$', s: '|'}
   - $$mdi:volume-off$$
   - $$mdi:keyboard-esc$$
@@ -349,3 +349,11 @@ combos:
   k: F9
 - p: [11, 24]
   k: F10
+- p: [35, 34]
+  k: {t: (, s: <}
+- p: [35, 36]
+  k: {t: ), s: '>'}
+- p: [41, 42]
+  k: Ctl+C
+- p: [43, 42]
+  k: Ctl+V
