@@ -211,20 +211,30 @@
 &kp TAB         &kp Q                 &kp W                 &kp E                   &kp R                     &kp T          &kp DOWN_ARROW   &kp Y        &kp U                      &kp I                    &kp O                  &kp P                     &kp BACKSPACE
 &kp LEFT_SHIFT  &HRM_LEFT LEFT_GUI A  &HRM_LEFT LEFT_ALT S  &HRM_LEFT LEFT_SHIFT D  &HRM_LEFT LEFT_CONTROL F  &kp G          &kp LEFT_ARROW   &kp H        &HRM_RIGHT LEFT_CONTROL J  &HRM_RIGHT LEFT_SHIFT K  &HRM_RIGHT LEFT_ALT L  &HRM_RIGHT LEFT_GUI SEMI  &mt RIGHT_SHIFT APOSTROPHE
 &kp LCTRL       &kp Z                 &kp X                 &kp C                   &kp V                     &kp B          &kp RIGHT_ARROW  &kp N        &kp M                      &comma_ex                &period_ex             &kp SLASH                 &kp BACKSLASH
-&kp C_MUTE      &kp ESCAPE            &sk LEFT_GUI          &sk LEFT_ALT            &mo 1                     &lt 1 SPACE    &kp ENTER        &lt 1 SPACE  &kp ENTER                  &kp LEFT_ARROW           &kp RIGHT_ARROW        &kp BACKSPACE
+&kp C_MUTE      &kp ESCAPE            &sk LEFT_GUI          &sk LEFT_ALT            &mo 2                     &lt 2 SPACE    &kp ENTER        &lt 2 SPACE  &kp ENTER                  &kp LEFT_ARROW           &kp RIGHT_ARROW        &kp BACKSPACE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
             display-name = "Main";
         };
 
+        hrm_block {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans         &trans
+&trans  &kp A   &kp S   &kp D   &kp F   &trans    &trans  &trans  &kp J   &kp K   &kp L   &kp SEMICOLON  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
         Ex {
             bindings = <
-&trans      &kp F1        &kp F2          &kp F3        &kp F4         &kp F5          &mmv MOVE_UP     &kp F6     &kp F7    &kp F8      &kp F9     &kp F10           &mo 2
-&trans      &kp NUMBER_6  &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9   &kp NUMBER_0    &mmv MOVE_DOWN   &kp PG_UP  &kp HOME  &kp UP      &kp END    &kp MINUS         &kp EQUAL
-&trans      &kp TILDE     &kp MINUS       &kp SLASH     &kp BACKSLASH  &kp PLUS        &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT  &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans      &kp GRAVE     &kp UNDERSCORE  &trans        &trans         &kp EQUAL       &mmv MOVE_RIGHT  &trans     &trans    &kp INSERT  &kp F11    &kp F12           &kp PRINTSCREEN
-&kp C_MUTE  &trans        &kp BACKSPACE   &trans        &trans         &kp RET         &mkp LCLK        &trans     &trans    &trans      &trans     &trans
+&rgb_ug RGB_TOG  &kp F1        &kp F2          &kp F3        &kp F4        &kp F5          &mmv MOVE_UP     &kp F6     &kp F7    &kp F8      &kp F9     &kp F10  &mo 3
+&trans           &kp NUMBER_6  &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &mmv MOVE_DOWN   &kp PG_UP  &kp HOME  &kp UP      &kp END    &trans   &trans
+&trans           &kp TILDE     &kp MINUS       &kp SLASH     &kp PLUS      &trans          &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT  &kp DOWN    &kp RIGHT  &trans   &trans
+&trans           &kp GRAVE     &kp UNDERSCORE  &trans        &kp EQUAL     &trans          &mmv MOVE_RIGHT  &trans     &trans    &kp INSERT  &kp F11    &kp F12  &kp PRINTSCREEN
+&kp C_MUTE       &trans        &kp BACKSPACE   &trans        &trans        &kp RET         &mkp LCLK        &tog 1     &trans    &trans      &trans     &trans
             >;
 
             display-name = "Ex";
@@ -237,7 +247,7 @@
 &trans           &bt BT_CLR       &bt BT_CLR_ALL   &out OUT_BLE     &out OUT_USB     &soft_off       &mmv MOVE_DOWN   &trans  &trans  &trans  &trans  &trans  &trans
 &rgb_ug RGB_TOG  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &trans          &mmv MOVE_LEFT   &trans  &trans  &trans  &trans  &trans  &trans
 &rgb_ug RGB_EFF  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &trans          &mmv MOVE_RIGHT  &trans  &trans  &trans  &trans  &trans  &trans
-&trans           &trans           &trans           &trans           &trans           &tog 3          &mkp LCLK        &trans  &trans  &trans  &trans  &trans
+&trans           &trans           &trans           &trans           &trans           &tog 4          &mkp LCLK        &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -246,11 +256,11 @@
 
         Space {
             bindings = <
-&tog 3  &trans  &trans  &trans  &trans  &trans       &trans  &trans       &trans  &trans  &trans  &trans  &trans
+&tog 4  &trans  &trans  &trans  &trans  &trans       &trans  &trans       &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans       &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans       &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans       &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &mo 1   &kp SPACE    &trans  &lt 1 SPACE  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &mo 2   &kp SPACE    &trans  &lt 2 SPACE  &trans  &trans  &trans  &trans
             >;
 
             label = "Space";
