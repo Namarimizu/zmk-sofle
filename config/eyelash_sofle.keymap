@@ -79,7 +79,7 @@
         bindings = <&kp LEFT_PARENTHESIS>, <&kp LESS_THAN>;
 
         #binding-cells = <0>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
+        mods = <(MOD_LSFT|MOD_RSFT|MOD_LGUI|MOD_RGUI)>;
     };
 
     right_parenthesis_ex: right_parenthesis_ex {
@@ -88,7 +88,7 @@
         bindings = <&kp RIGHT_PARENTHESIS>, <&kp GREATER_THAN>;
 
         #binding-cells = <0>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
+        mods = <(MOD_LSFT|MOD_RSFT|MOD_LGUI|MOD_RGUI)>;
     };
 
     comma_ex: comma_ex {
@@ -118,16 +118,34 @@
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 
+    left_bracket_ex: left_bracket_ex {
+        compatible = "zmk,behavior-mod-morph";
+        label = "LEFT_BRACKET_EX";
+        bindings = <&kp LEFT_BRACKET>, <&kp LEFT_BRACE>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT|MOD_RSFT|MOD_LGUI|MOD_RGUI)>;
+    };
+
+    right_bracket_ex: right_bracket_ex {
+        compatible = "zmk,behavior-mod-morph";
+        label = "RIGHT_BRACKET_EX";
+        bindings = <&kp RIGHT_BRACKET>, <&kp RIGHT_BRACE>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT|MOD_RSFT|MOD_LGUI|MOD_RGUI)>;
+    };
+
     combos {
         compatible = "zmk,combos";
 
         R_Bracket {
-            bindings = <&kp RIGHT_BRACKET>;
+            bindings = <&right_bracket_ex>;
             key-positions = <29 30>;
         };
 
         L_Bracket {
-            bindings = <&kp LEFT_BRACKET>;
+            bindings = <&left_bracket_ex>;
             key-positions = <29 28>;
         };
 
