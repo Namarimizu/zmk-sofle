@@ -426,3 +426,5 @@ combos:
   k: {t: /, s: '?'}
 - p: [22, 36]
   k: {h: \, s: '|'}
+- p: [13, 14]
+  k: $$mdi:keyboard-esc$$
