@@ -240,6 +240,11 @@
             bindings = <&kp BACKSLASH>;
             key-positions = <22 36>;
         };
+
+        combo_escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <13 14>;
+        };
     };
 
     keymap {
