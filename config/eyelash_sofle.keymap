@@ -136,6 +136,18 @@
         mods = <(MOD_LSFT|MOD_RSFT|MOD_LGUI|MOD_RGUI)>;
     };
 
+    custom_hold_tap_for_space: custom_hold_tap_for_space {
+        compatible = "zmk,behavior-hold-tap";
+        label = "CUSTOM_HOLD_TAP_FOR_SPACE";
+        bindings = <&mo>, <&kp>;
+
+        #binding-cells = <2>;
+        flavor = "hold-preferred";
+        tapping-term-ms = <200>;
+        quick-tap-ms = <200>;
+        retro-tap;
+    };
+
     combos {
         compatible = "zmk,combos";
 
@@ -218,6 +230,16 @@
             bindings = <&kp LC(V)>;
             key-positions = <43 42>;
         };
+
+        combo_slash {
+            bindings = <&kp SLASH>;
+            key-positions = <16 28>;
+        };
+
+        combo_backslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <22 36>;
+        };
     };
 
     keymap {
@@ -225,11 +247,11 @@
 
         Main {
             bindings = <
-&kp CAPSLOCK    &kp N1                &kp N2                &kp N3                  &kp N4                    &kp N5         &kp UP_ARROW     &kp N6       &kp N7                     &kp N8                   &kp N9                 &kp N0                    &kp DELETE
-&kp TAB         &kp Q                 &kp W                 &kp E                   &kp R                     &kp T          &kp DOWN_ARROW   &kp Y        &kp U                      &kp I                    &kp O                  &kp P                     &kp BACKSPACE
-&kp LEFT_SHIFT  &HRM_LEFT LEFT_GUI A  &HRM_LEFT LEFT_ALT S  &HRM_LEFT LEFT_SHIFT D  &HRM_LEFT LEFT_CONTROL F  &kp G          &kp LEFT_ARROW   &kp H        &HRM_RIGHT LEFT_CONTROL J  &HRM_RIGHT LEFT_SHIFT K  &HRM_RIGHT LEFT_ALT L  &HRM_RIGHT LEFT_GUI SEMI  &mt RIGHT_SHIFT APOSTROPHE
-&kp LCTRL       &kp Z                 &kp X                 &kp C                   &kp V                     &kp B          &kp RIGHT_ARROW  &kp N        &kp M                      &comma_ex                &period_ex             &question_ex              &kp BACKSLASH
-&kp C_MUTE      &kp ESCAPE            &sk LEFT_GUI          &sk LEFT_ALT            &mo 2                     &lt 2 SPACE    &kp ENTER        &lt 2 SPACE  &kp ENTER                  &kp LEFT_ARROW           &kp RIGHT_ARROW        &kp BACKSPACE
+&kp CAPSLOCK    &kp N1                &kp N2                &kp N3                  &kp N4                    &kp N5                                &kp UP_ARROW     &kp N6                              &kp N7                     &kp N8                   &kp N9                 &kp N0                          &kp DELETE
+&kp TAB         &kp Q                 &kp W                 &kp E                   &kp R                     &kp T                                 &kp DOWN_ARROW   &kp Y                               &kp U                      &kp I                    &kp O                  &kp P                           &kp EQUAL
+&kp LEFT_SHIFT  &HRM_LEFT LEFT_GUI A  &HRM_LEFT LEFT_ALT S  &HRM_LEFT LEFT_SHIFT D  &HRM_LEFT LEFT_CONTROL F  &kp G                                 &kp LEFT_ARROW   &kp H                               &HRM_RIGHT LEFT_CONTROL J  &HRM_RIGHT LEFT_SHIFT K  &HRM_RIGHT LEFT_ALT L  &HRM_RIGHT LEFT_GUI APOSTROPHE  &kp BACKSPACE
+&kp LCTRL       &kp Z                 &kp X                 &kp C                   &kp V                     &kp B                                 &kp RIGHT_ARROW  &kp N                               &kp M                      &comma_ex                &period_ex             &question_ex                    &kp MINUS
+&kp C_MUTE      &kp ESCAPE            &sk LEFT_GUI          &sk LEFT_ALT            &mo 2                     &custom_hold_tap_for_space 2 SPACE    &kp ENTER        &custom_hold_tap_for_space 2 ENTER  &kp ENTER                  &kp LEFT_ARROW           &kp RIGHT_ARROW        &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -248,10 +270,10 @@
 
         Ex {
             bindings = <
-&rgb_ug RGB_TOG  &kp F1        &kp F2         &kp F3        &kp F4        &kp F5     &mmv MOVE_UP     &kp F6     &kp F7    &kp F8      &kp F9     &kp F10         &mo 3
-&trans           &kp TILDE     &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9  &trans     &mmv MOVE_DOWN   &kp PG_UP  &kp HOME  &kp UP      &kp END    &kp UNDERSCORE  &kp PLUS
-&trans           &kp NUMBER_0  &kp NUMBER_4   &kp N5        &kp NUMBER_6  &trans     &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT  &kp DOWN    &kp RIGHT  &kp MINUS       &kp EQUAL
-&trans           &kp GRAVE     &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &trans     &mmv MOVE_RIGHT  &trans     &trans    &kp INSERT  &kp F11    &kp F12         &kp PRINTSCREEN
+&rgb_ug RGB_TOG  &kp F1        &kp F2         &kp F3        &kp F4        &kp F5     &mmv MOVE_UP     &kp F6     &kp F7    &kp F8      &kp F9     &kp F10  &mo 3
+&trans           &kp TILDE     &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9  &trans     &mmv MOVE_DOWN   &kp PG_UP  &kp HOME  &kp UP      &kp END    &trans   &trans
+&trans           &kp NUMBER_0  &kp NUMBER_4   &kp N5        &kp NUMBER_6  &trans     &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT  &kp DOWN    &kp RIGHT  &trans   &kp DELETE
+&trans           &kp GRAVE     &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &trans     &mmv MOVE_RIGHT  &trans     &trans    &kp INSERT  &kp F11    &kp F12  &kp PRINTSCREEN
 &kp C_MUTE       &trans        &kp BACKSPACE  &trans        &trans        &kp RET    &mkp LCLK        &tog 1     &trans    &trans      &trans     &trans
             >;
 
