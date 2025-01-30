@@ -91,15 +91,6 @@
         mods = <(MOD_LSFT|MOD_RSFT|MOD_LGUI|MOD_RGUI)>;
     };
 
-    comma_ex: comma_ex {
-        compatible = "zmk,behavior-mod-morph";
-        label = "COMMA_EX";
-        bindings = <&kp COMMA>, <&kp SEMICOLON>;
-
-        #binding-cells = <0>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-
     period_ex: period_ex {
         compatible = "zmk,behavior-mod-morph";
         label = "PERIOD_EX";
@@ -146,6 +137,15 @@
         tapping-term-ms = <200>;
         quick-tap-ms = <200>;
         retro-tap;
+    };
+
+    comma_ex: comma_ex {
+        compatible = "zmk,behavior-mod-morph";
+        label = "COMMA_EX";
+        bindings = <&kp COMMA>, <&kp SEMI>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 
     combos {
