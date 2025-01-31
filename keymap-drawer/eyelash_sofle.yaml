@@ -59,7 +59,7 @@ layers:
   - Ex
   - {t: '$$mdi:keyboard-space$$', h: Ex}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - Ex
+  - {t: Ex, h: Ex}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-right-bold$$
