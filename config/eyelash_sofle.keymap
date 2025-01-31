@@ -263,7 +263,7 @@
         macro_semicolon: macro_semicolon {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp SEMI>;
+            bindings = <&kp RIGHT_SHIFT &kp SEMI>;
             label = "MACRO_SEMICOLON";
         };
     };
