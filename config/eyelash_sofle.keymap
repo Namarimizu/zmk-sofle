@@ -145,8 +145,8 @@
         bindings = <&kp COMMA>, <&kp SEMICOLON>;
 
         #binding-cells = <0>;
-        mods = <(MOD_LSFT|MOD_RSFT|MOD_LGUI|MOD_LALT)>;
-        keep-mods = <(MOD_RSFT)>;
+        mods = <(MOD_LSFT|MOD_LALT)>;
+        keep-mods = <(MOD_LSFT)>;
     };
 
     custom_hold_tap_for_enter: custom_hold_tap_for_enter {
