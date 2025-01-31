@@ -94,7 +94,7 @@
     period_ex: period_ex {
         compatible = "zmk,behavior-mod-morph";
         label = "PERIOD_EX";
-        bindings = <&kp PERIOD>, <&kp SEMICOLON>;
+        bindings = <&kp PERIOD>, <&kp COLON>;
 
         #binding-cells = <0>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -142,7 +142,7 @@
     comma_ex: comma_ex {
         compatible = "zmk,behavior-mod-morph";
         label = "COMMA_EX";
-        bindings = <&kp COMMA>, <&kp COLON>;
+        bindings = <&kp COMMA>, <&kp RS(SEMI)>;
 
         #binding-cells = <0>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
