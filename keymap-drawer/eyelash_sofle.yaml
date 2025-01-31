@@ -48,8 +48,8 @@ layers:
   - $$mdi:arrow-right-bold$$
   - N
   - M
-  - {t: ., s: ':'}
-  - {t: ., s: ':'}
+  - {t: ',', s: ':'}
+  - {t: ., s: ;}
   - {t: '?', s: '!'}
   - {t: '-', s: _}
   - $$mdi:volume-off$$
