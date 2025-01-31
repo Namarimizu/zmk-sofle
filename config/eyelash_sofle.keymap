@@ -142,10 +142,11 @@
     comma_ex: comma_ex {
         compatible = "zmk,behavior-mod-morph";
         label = "COMMA_EX";
-        bindings = <&kp COMMA>, <&macro_semicolon>;
+        bindings = <&kp COMMA>, <&kp SEMICOLON>;
 
         #binding-cells = <0>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
+        mods = <(MOD_LSFT|MOD_RSFT|MOD_LGUI|MOD_LALT)>;
+        keep-mods = <(MOD_RSFT)>;
     };
 
     custom_hold_tap_for_enter: custom_hold_tap_for_enter {
@@ -256,15 +257,6 @@
         combo_escape {
             bindings = <&kp ESCAPE>;
             key-positions = <13 14>;
-        };
-    };
-
-    macros {
-        macro_semicolon: macro_semicolon {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RIGHT_SHIFT &kp SEMI>;
-            label = "MACRO_SEMICOLON";
         };
     };
 
