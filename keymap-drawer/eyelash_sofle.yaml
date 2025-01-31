@@ -48,7 +48,7 @@ layers:
   - $$mdi:arrow-right-bold$$
   - N
   - M
-  - {t: ',', s: '&macro_semicolon'}
+  - {t: ',', s: A}
   - {t: ., s: ':'}
   - {t: '?', s: '!'}
   - {t: '-', s: _}
