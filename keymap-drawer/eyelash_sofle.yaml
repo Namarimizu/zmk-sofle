@@ -424,10 +424,8 @@ combos:
   l: [Main, hrm_block, Space]
 - p: [41, 42]
   k: Ctl+C
-  l: [Main, hrm_block, Space]
 - p: [43, 42]
   k: Ctl+V
-  l: [Main, hrm_block, Space]
 - p: [16, 28]
   k: {t: /, s: '?'}
   l: [Main, hrm_block, Space]
