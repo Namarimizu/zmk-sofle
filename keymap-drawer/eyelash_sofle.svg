@@ -1501,14 +1501,6 @@ rect.held, rect.combo.held {
 <text x="840" y="84" class="combo tap">F10</text>
 </g>
 <g class="combo combopos-10">
-<rect rx="6" ry="6" x="154" y="186" width="28" height="26" class="combo"/>
-<text x="168" y="200" class="combo tap">Ctl+C</text>
-</g>
-<g class="combo combopos-11">
-<rect rx="6" ry="6" x="210" y="186" width="28" height="26" class="combo"/>
-<text x="224" y="200" class="combo tap">Ctl+V</text>
-</g>
-<g class="combo combopos-12">
 <rect rx="6" ry="6" x="42" y="99" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="47" y="103" height="18" width="18.0" class="combo tap glyph mdi:keyboard-esc"/>
 </g>
@@ -1913,14 +1905,6 @@ rect.held, rect.combo.held {
 <text x="840" y="84" class="combo tap">F10</text>
 </g>
 <g class="combo combopos-10">
-<rect rx="6" ry="6" x="154" y="186" width="28" height="26" class="combo"/>
-<text x="168" y="200" class="combo tap">Ctl+C</text>
-</g>
-<g class="combo combopos-11">
-<rect rx="6" ry="6" x="210" y="186" width="28" height="26" class="combo"/>
-<text x="224" y="200" class="combo tap">Ctl+V</text>
-</g>
-<g class="combo combopos-12">
 <rect rx="6" ry="6" x="42" y="99" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="47" y="103" height="18" width="18.0" class="combo tap glyph mdi:keyboard-esc"/>
 </g>
@@ -2700,14 +2684,6 @@ rect.held, rect.combo.held {
 <text x="840" y="84" class="combo tap">F10</text>
 </g>
 <g class="combo combopos-10">
-<rect rx="6" ry="6" x="154" y="186" width="28" height="26" class="combo"/>
-<text x="168" y="200" class="combo tap">Ctl+C</text>
-</g>
-<g class="combo combopos-11">
-<rect rx="6" ry="6" x="210" y="186" width="28" height="26" class="combo"/>
-<text x="224" y="200" class="combo tap">Ctl+V</text>
-</g>
-<g class="combo combopos-12">
 <rect rx="6" ry="6" x="42" y="99" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="47" y="103" height="18" width="18.0" class="combo tap glyph mdi:keyboard-esc"/>
 </g>
