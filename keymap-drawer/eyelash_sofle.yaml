@@ -422,8 +422,6 @@ combos:
 - p: [35, 36]
   k: {t: ), s: '>'}
   l: [Main, hrm_block, Space]
-- p: [41, 42]
-  k: Ctl+C
 - p: [43, 42]
   k: Ctl+V
 - p: [16, 28]
@@ -434,3 +432,5 @@ combos:
   l: [Main, hrm_block, Space]
 - p: [13, 14]
   k: $$mdi:keyboard-esc$$
+- p: [40, 41]
+  k: Ctl+C
