@@ -392,8 +392,10 @@ layers:
 combos:
 - p: [29, 30]
   k: {t: ']', s: '}'}
+  l: [Main]
 - p: [29, 28]
   k: {t: '[', s: '{'}
+  l: [Main]
 - p: [1, 14]
   k: F1
 - p: [2, 15]
@@ -416,15 +418,19 @@ combos:
   k: F10
 - p: [35, 34]
   k: {t: (, s: <}
+  l: [Main]
 - p: [35, 36]
   k: {t: ), s: '>'}
+  l: [Main]
 - p: [41, 42]
   k: Ctl+C
 - p: [43, 42]
   k: Ctl+V
 - p: [16, 28]
   k: {t: /, s: '?'}
+  l: [Main]
 - p: [22, 36]
   k: {h: \, s: '|'}
+  l: [Main]
 - p: [13, 14]
   k: $$mdi:keyboard-esc$$
