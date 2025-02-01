@@ -48,7 +48,7 @@ layers:
   - $$mdi:arrow-right-bold$$
   - N
   - M
-  - {t: ',', s: '&new_macro'}
+  - {t: ',', s: ;}
   - {t: ., s: ':'}
   - {t: '?', s: '!'}
   - {t: '-', s: _}
