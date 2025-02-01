@@ -276,12 +276,6 @@
             require-prior-idle-ms = <50>;
         };
 
-        combo_copy {
-            bindings = <&kp LC(C)>;
-            key-positions = <40 41>;
-            require-prior-idle-ms = <50>;
-        };
-
         combo_ctrlc {
             bindings = <&kp LC(C)>;
             key-positions = <41 42>;
