@@ -251,7 +251,7 @@
         };
 
         combo_ctrlc {
-            bindings = <&kp LC(C)>;
+            bindings = <&kp RC(C)>;
             key-positions = <41 42>;
             timeout-ms = <0>;
             require-prior-idle-ms = <50>;
@@ -314,11 +314,11 @@
 
         Ex {
             bindings = <
-&rgb_ug RGB_TOG  &kp F1        &kp F2         &kp F3        &kp F4        &kp F5     &mmv MOVE_UP     &kp F6     &kp F7    &kp F8      &kp F9     &kp F10  &mo 3
-&trans           &kp TILDE     &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &trans     &mmv MOVE_DOWN   &kp PG_UP  &kp HOME  &kp UP      &kp END    &trans   &trans
-&trans           &kp NUMBER_0  &kp NUMBER_4   &kp N5        &kp NUMBER_6  &trans     &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT  &kp DOWN    &kp RIGHT  &trans   &kp DELETE
-&trans           &kp GRAVE     &kp N7         &kp NUMBER_8  &kp NUMBER_9  &trans     &mmv MOVE_RIGHT  &trans     &trans    &kp INSERT  &kp F11    &kp F12  &kp PRINTSCREEN
-&kp C_MUTE       &trans        &kp BACKSPACE  &trans        &trans        &kp RET    &mkp LCLK        &tog 1     &trans    &trans      &trans     &trans
+&rgb_ug RGB_TOG  &kp F1        &kp F2         &kp F3        &kp F4        &kp F5        &mmv MOVE_UP     &kp F6     &kp F7    &kp F8    &kp F9     &kp F10  &mo 3
+&trans           &kp TILDE     &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp INSERT    &mmv MOVE_DOWN   &kp PG_UP  &kp HOME  &kp UP    &kp END    &kp F11  &kp F12
+&trans           &kp NUMBER_0  &kp NUMBER_4   &kp N5        &kp NUMBER_6  &trans        &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &trans   &kp DELETE
+&trans           &kp GRAVE     &kp N7         &kp NUMBER_8  &kp NUMBER_9  &trans        &mmv MOVE_RIGHT  &trans     &trans    &trans    &trans     &trans   &kp PRINTSCREEN
+&kp C_MUTE       &trans        &kp BACKSPACE  &trans        &trans        &kp RET       &mkp LCLK        &tog 1     &trans    &trans    &trans     &trans
             >;
 
             display-name = "Ex";
