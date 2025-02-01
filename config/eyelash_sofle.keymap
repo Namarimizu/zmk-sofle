@@ -255,14 +255,12 @@
             key-positions = <41 42>;
             timeout-ms = <0>;
             require-prior-idle-ms = <50>;
-            layers = <0 1 4>;
         };
 
         combo_ctrlv {
             bindings = <&kp LC(V)>;
             key-positions = <43 42>;
             require-prior-idle-ms = <50>;
-            layers = <0 1 4>;
         };
 
         combo_slash {
