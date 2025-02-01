@@ -712,6 +712,10 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="98" y="201" width="28" height="26" class="combo"/>
 <text x="112" y="214" class="combo tap">Ctl+C</text>
 </g>
+<g class="combo combopos-19">
+<rect rx="6" ry="6" x="154" y="186" width="28" height="26" class="combo"/>
+<text x="168" y="200" class="combo tap">Ctl+C</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 388)" class="layer-hrm_block">
@@ -1119,6 +1123,10 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="98" y="201" width="28" height="26" class="combo"/>
 <text x="112" y="214" class="combo tap">Ctl+C</text>
 </g>
+<g class="combo combopos-19">
+<rect rx="6" ry="6" x="154" y="186" width="28" height="26" class="combo"/>
+<text x="168" y="200" class="combo tap">Ctl+C</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 776)" class="layer-Ex">
@@ -1511,6 +1519,10 @@ rect.held, rect.combo.held {
 <g class="combo combopos-12">
 <rect rx="6" ry="6" x="98" y="201" width="28" height="26" class="combo"/>
 <text x="112" y="214" class="combo tap">Ctl+C</text>
+</g>
+<g class="combo combopos-13">
+<rect rx="6" ry="6" x="154" y="186" width="28" height="26" class="combo"/>
+<text x="168" y="200" class="combo tap">Ctl+C</text>
 </g>
 </g>
 </g>
@@ -1924,6 +1936,10 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="98" y="201" width="28" height="26" class="combo"/>
 <text x="112" y="214" class="combo tap">Ctl+C</text>
 </g>
+<g class="combo combopos-13">
+<rect rx="6" ry="6" x="154" y="186" width="28" height="26" class="combo"/>
+<text x="168" y="200" class="combo tap">Ctl+C</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 1553)" class="layer-Space">
@@ -2334,6 +2350,10 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="98" y="201" width="28" height="26" class="combo"/>
 <text x="112" y="214" class="combo tap">Ctl+C</text>
 </g>
+<g class="combo combopos-19">
+<rect rx="6" ry="6" x="154" y="186" width="28" height="26" class="combo"/>
+<text x="168" y="200" class="combo tap">Ctl+C</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 1941)" class="layer-4">
@@ -2710,6 +2730,10 @@ rect.held, rect.combo.held {
 <g class="combo combopos-12">
 <rect rx="6" ry="6" x="98" y="201" width="28" height="26" class="combo"/>
 <text x="112" y="214" class="combo tap">Ctl+C</text>
+</g>
+<g class="combo combopos-13">
+<rect rx="6" ry="6" x="154" y="186" width="28" height="26" class="combo"/>
+<text x="168" y="200" class="combo tap">Ctl+C</text>
 </g>
 </g>
 </g>
