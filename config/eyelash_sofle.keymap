@@ -176,14 +176,14 @@
             bindings = <&right_bracket_ex>;
             key-positions = <29 30>;
             require-prior-idle-ms = <50>;
-            layers = <0>;
+            layers = <0 1 4>;
         };
 
         L_Bracket {
             bindings = <&left_bracket_ex>;
             key-positions = <29 28>;
             require-prior-idle-ms = <50>;
-            layers = <0>;
+            layers = <0 1 4>;
         };
 
         combo_F1 {
@@ -239,14 +239,14 @@
         combo_lpar {
             bindings = <&left_parenthesis_ex>;
             key-positions = <35 34>;
-            layers = <0>;
+            layers = <0 1 4>;
             require-prior-idle-ms = <50>;
         };
 
         combo_rpar {
             bindings = <&right_parenthesis_ex>;
             key-positions = <35 36>;
-            layers = <0>;
+            layers = <0 1 4>;
             require-prior-idle-ms = <50>;
         };
 
@@ -267,14 +267,14 @@
             bindings = <&kp SLASH>;
             key-positions = <16 28>;
             require-prior-idle-ms = <50>;
-            layers = <0>;
+            layers = <0 1 4>;
         };
 
         combo_backslash {
             bindings = <&kp BACKSLASH>;
             key-positions = <22 36>;
             require-prior-idle-ms = <50>;
-            layers = <0>;
+            layers = <0 1 4>;
         };
 
         combo_escape {
@@ -338,11 +338,11 @@
 
         Space {
             bindings = <
-&tog 4  &trans  &trans  &trans  &trans  &trans       &trans  &trans       &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans       &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans       &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans       &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &mo 2   &kp SPACE    &trans  &lt 2 SPACE  &trans  &trans  &trans  &trans
+&tog 4  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &mo 2   &kp SPACE    &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "Space";
@@ -359,12 +359,5 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        cond_main_layer {
-            if-layers = <1 4>;
-            then-layer = <0>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
