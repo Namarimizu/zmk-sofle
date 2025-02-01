@@ -142,7 +142,7 @@
     comma_ex: comma_ex {
         compatible = "zmk,behavior-mod-morph";
         label = "COMMA_EX";
-        bindings = <&kp COMMA>, <&new_macro>;
+        bindings = <&kp COMMA>, <&kp SEMI>;
 
         #binding-cells = <0>;
         mods = <(MOD_LSFT|MOD_LALT|MOD_RSFT)>;
@@ -265,20 +265,6 @@
         combo_escape {
             bindings = <&kp ESCAPE>;
             key-positions = <13 14>;
-        };
-    };
-
-    macros {
-        new_macro: new_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_release>,
-                <&kp LS(LEFT_SHIFT)>,
-                <&macro_tap>,
-                <&kp SEMI>;
-
-            label = "NEW_MACRO";
         };
     };
 
