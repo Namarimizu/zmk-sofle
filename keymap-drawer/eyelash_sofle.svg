@@ -709,10 +709,6 @@ rect.held, rect.combo.held {
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="47" y="103" height="18" width="18.0" class="combo tap glyph mdi:keyboard-esc"/>
 </g>
 <g class="combo combopos-18">
-<rect rx="6" ry="6" x="98" y="201" width="28" height="26" class="combo"/>
-<text x="112" y="214" class="combo tap">Ctl+C</text>
-</g>
-<g class="combo combopos-19">
 <rect rx="6" ry="6" x="154" y="186" width="28" height="26" class="combo"/>
 <text x="168" y="200" class="combo tap">Ctl+C</text>
 </g>
@@ -1120,10 +1116,6 @@ rect.held, rect.combo.held {
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="47" y="103" height="18" width="18.0" class="combo tap glyph mdi:keyboard-esc"/>
 </g>
 <g class="combo combopos-18">
-<rect rx="6" ry="6" x="98" y="201" width="28" height="26" class="combo"/>
-<text x="112" y="214" class="combo tap">Ctl+C</text>
-</g>
-<g class="combo combopos-19">
 <rect rx="6" ry="6" x="154" y="186" width="28" height="26" class="combo"/>
 <text x="168" y="200" class="combo tap">Ctl+C</text>
 </g>
@@ -1517,10 +1509,6 @@ rect.held, rect.combo.held {
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="47" y="103" height="18" width="18.0" class="combo tap glyph mdi:keyboard-esc"/>
 </g>
 <g class="combo combopos-12">
-<rect rx="6" ry="6" x="98" y="201" width="28" height="26" class="combo"/>
-<text x="112" y="214" class="combo tap">Ctl+C</text>
-</g>
-<g class="combo combopos-13">
 <rect rx="6" ry="6" x="154" y="186" width="28" height="26" class="combo"/>
 <text x="168" y="200" class="combo tap">Ctl+C</text>
 </g>
@@ -1933,10 +1921,6 @@ rect.held, rect.combo.held {
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="47" y="103" height="18" width="18.0" class="combo tap glyph mdi:keyboard-esc"/>
 </g>
 <g class="combo combopos-12">
-<rect rx="6" ry="6" x="98" y="201" width="28" height="26" class="combo"/>
-<text x="112" y="214" class="combo tap">Ctl+C</text>
-</g>
-<g class="combo combopos-13">
 <rect rx="6" ry="6" x="154" y="186" width="28" height="26" class="combo"/>
 <text x="168" y="200" class="combo tap">Ctl+C</text>
 </g>
@@ -2347,10 +2331,6 @@ rect.held, rect.combo.held {
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="47" y="103" height="18" width="18.0" class="combo tap glyph mdi:keyboard-esc"/>
 </g>
 <g class="combo combopos-18">
-<rect rx="6" ry="6" x="98" y="201" width="28" height="26" class="combo"/>
-<text x="112" y="214" class="combo tap">Ctl+C</text>
-</g>
-<g class="combo combopos-19">
 <rect rx="6" ry="6" x="154" y="186" width="28" height="26" class="combo"/>
 <text x="168" y="200" class="combo tap">Ctl+C</text>
 </g>
@@ -2728,10 +2708,6 @@ rect.held, rect.combo.held {
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="47" y="103" height="18" width="18.0" class="combo tap glyph mdi:keyboard-esc"/>
 </g>
 <g class="combo combopos-12">
-<rect rx="6" ry="6" x="98" y="201" width="28" height="26" class="combo"/>
-<text x="112" y="214" class="combo tap">Ctl+C</text>
-</g>
-<g class="combo combopos-13">
 <rect rx="6" ry="6" x="154" y="186" width="28" height="26" class="combo"/>
 <text x="168" y="200" class="combo tap">Ctl+C</text>
 </g>
