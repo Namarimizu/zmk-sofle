@@ -250,13 +250,6 @@
             require-prior-idle-ms = <50>;
         };
 
-        combo_ctrlc {
-            bindings = <&kp RC(C)>;
-            key-positions = <41 42>;
-            timeout-ms = <0>;
-            require-prior-idle-ms = <50>;
-        };
-
         combo_ctrlv {
             bindings = <&kp LC(V)>;
             key-positions = <43 42>;
@@ -280,6 +273,12 @@
         combo_escape {
             bindings = <&kp ESCAPE>;
             key-positions = <13 14>;
+            require-prior-idle-ms = <50>;
+        };
+
+        combo_copy {
+            bindings = <&kp LC(C)>;
+            key-positions = <40 41>;
             require-prior-idle-ms = <50>;
         };
     };
