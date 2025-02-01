@@ -142,11 +142,10 @@
     comma_ex: comma_ex {
         compatible = "zmk,behavior-mod-morph";
         label = "COMMA_EX";
-        bindings = <&kp COMMA>, <&kp SEMICOLON>;
+        bindings = <&kp COMMA>, <&new_macro>;
 
         #binding-cells = <0>;
-        mods = <(MOD_LSFT|MOD_LALT)>;
-        keep-mods = <(MOD_LSFT)>;
+        mods = <(MOD_LSFT|MOD_LALT|MOD_RSFT)>;
     };
 
     custom_hold_tap_stickylayer: custom_hold_tap_stickylayer {
@@ -266,6 +265,20 @@
         combo_escape {
             bindings = <&kp ESCAPE>;
             key-positions = <13 14>;
+        };
+    };
+
+    macros {
+        new_macro: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_release>,
+                <&kp LS(LEFT_SHIFT)>,
+                <&macro_tap>,
+                <&kp SEMI>;
+
+            label = "NEW_MACRO";
         };
     };
 
