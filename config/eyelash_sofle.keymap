@@ -176,14 +176,14 @@
             bindings = <&right_bracket_ex>;
             key-positions = <29 30>;
             require-prior-idle-ms = <50>;
-            layers = <0 1 4>;
+            layers = <0 1>;
         };
 
         L_Bracket {
             bindings = <&left_bracket_ex>;
             key-positions = <29 28>;
             require-prior-idle-ms = <50>;
-            layers = <0 1 4>;
+            layers = <0 1>;
         };
 
         combo_F1 {
@@ -239,14 +239,14 @@
         combo_lpar {
             bindings = <&left_parenthesis_ex>;
             key-positions = <35 34>;
-            layers = <0 1 4>;
+            layers = <0 1>;
             require-prior-idle-ms = <50>;
         };
 
         combo_rpar {
             bindings = <&right_parenthesis_ex>;
             key-positions = <35 36>;
-            layers = <0 1 4>;
+            layers = <0 1>;
             require-prior-idle-ms = <50>;
         };
 
@@ -260,14 +260,14 @@
             bindings = <&kp SLASH>;
             key-positions = <16 28>;
             require-prior-idle-ms = <50>;
-            layers = <0 1 4>;
+            layers = <0 1>;
         };
 
         combo_backslash {
             bindings = <&kp BACKSLASH>;
             key-positions = <22 36>;
             require-prior-idle-ms = <50>;
-            layers = <0 1 4>;
+            layers = <0 1>;
         };
 
         combo_escape {
@@ -317,7 +317,7 @@
 &trans           &kp TILDE     &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp INSERT    &mmv MOVE_DOWN   &kp PG_UP  &kp HOME  &kp UP    &kp END    &kp F11  &kp F12
 &trans           &kp NUMBER_0  &kp NUMBER_4   &kp N5        &kp NUMBER_6  &trans        &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &trans   &kp DELETE
 &trans           &kp GRAVE     &kp N7         &kp NUMBER_8  &kp NUMBER_9  &trans        &mmv MOVE_RIGHT  &trans     &trans    &trans    &trans     &trans   &kp PRINTSCREEN
-&kp C_MUTE       &trans        &kp BACKSPACE  &trans        &trans        &trans        &mkp LCLK        &tog 1     &trans    &trans    &trans     &trans
+&kp C_MUTE       &trans        &kp BACKSPACE  &trans        &trans        &trans        &mkp LCLK        &tog 1     &trans    &trans    &trans     &tog 4
             >;
 
             display-name = "Ex";
@@ -337,16 +337,16 @@
             label = "Misc";
         };
 
-        Space {
+        Gaming {
             bindings = <
-&tog 4  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &mo 2   &kp SPACE    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans                            &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans                            &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans                            &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans                            &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &mo 2   &kp SPACE    &trans  &custom_hold_tap_stickylayer 2 2  &trans  &trans  &trans  &trans
             >;
 
-            label = "Space";
+            label = "Gaming";
         };
 
         layer_4 {
