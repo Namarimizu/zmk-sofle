@@ -193,7 +193,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Gaming, h: toggle}
   Misc:
   - {t: '$$mdi:transfer$$', type: trans}
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
@@ -252,15 +252,15 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {t: Space, h: toggle, type: held}
+  - {t: Gaming, h: toggle, type: held}
   - $$mdi:mouse-left-click-outline$$
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  Space:
-  - {t: Space, h: toggle}
+  Gaming:
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -319,7 +319,7 @@ layers:
   - Ex
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Ex, h: Ex}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -392,10 +392,10 @@ layers:
 combos:
 - p: [29, 30]
   k: {t: ']', s: '}'}
-  l: [Main, hrm_block, Space]
+  l: [Main, hrm_block]
 - p: [29, 28]
   k: {t: '[', s: '{'}
-  l: [Main, hrm_block, Space]
+  l: [Main, hrm_block]
 - p: [1, 14]
   k: F1
 - p: [2, 15]
@@ -418,18 +418,18 @@ combos:
   k: F10
 - p: [35, 34]
   k: {t: (, s: <}
-  l: [Main, hrm_block, Space]
+  l: [Main, hrm_block]
 - p: [35, 36]
   k: {t: ), s: '>'}
-  l: [Main, hrm_block, Space]
+  l: [Main, hrm_block]
 - p: [43, 42]
   k: Ctl+V
 - p: [16, 28]
   k: {t: /, s: '?'}
-  l: [Main, hrm_block, Space]
+  l: [Main, hrm_block]
 - p: [22, 36]
   k: {h: \, s: '|'}
-  l: [Main, hrm_block, Space]
+  l: [Main, hrm_block]
 - p: [13, 14]
   k: $$mdi:keyboard-esc$$
 - p: [41, 42]
