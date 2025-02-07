@@ -187,7 +187,7 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {type: held alternate}
+  - {t: '$$mdi:keyboard-space$$', type: held alternate}
   - $$mdi:mouse-left-click-outline$$
   - {t: hrm_block, h: toggle, type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
