@@ -175,14 +175,14 @@
         R_Bracket {
             bindings = <&right_bracket_ex>;
             key-positions = <29 30>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <125>;
             layers = <0 1>;
         };
 
         L_Bracket {
             bindings = <&left_bracket_ex>;
             key-positions = <29 28>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <125>;
             layers = <0 1>;
         };
 
@@ -240,46 +240,46 @@
             bindings = <&left_parenthesis_ex>;
             key-positions = <35 34>;
             layers = <0 1>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <125>;
         };
 
         combo_rpar {
             bindings = <&right_parenthesis_ex>;
             key-positions = <35 36>;
             layers = <0 1>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <125>;
         };
 
         combo_ctrlv {
             bindings = <&kp LC(V)>;
             key-positions = <43 42>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <125>;
         };
 
         combo_slash {
             bindings = <&kp SLASH>;
             key-positions = <16 28>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <125>;
             layers = <0 1>;
         };
 
         combo_backslash {
             bindings = <&kp BACKSLASH>;
             key-positions = <22 36>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <125>;
             layers = <0 1>;
         };
 
         combo_escape {
             bindings = <&kp ESCAPE>;
             key-positions = <13 14>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <150>;
         };
 
         combo_ctrlc {
             bindings = <&kp LC(C)>;
             key-positions = <41 42>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <125>;
         };
     };
 
