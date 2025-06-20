@@ -5,8 +5,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 /*
@@ -176,64 +174,74 @@
             bindings = <&right_bracket_ex>;
             key-positions = <29 30>;
             require-prior-idle-ms = <100>;
-            layers = <0 1>;
+            layers = <0 1 3>;
         };
 
         L_Bracket {
             bindings = <&left_bracket_ex>;
             key-positions = <29 28>;
             require-prior-idle-ms = <100>;
-            layers = <0 1>;
+            layers = <0 1 3>;
         };
 
         combo_F1 {
             bindings = <&kp F1>;
             key-positions = <1 14>;
+            layers = <0 1>;
         };
 
         combo_F2 {
             bindings = <&kp F2>;
             key-positions = <2 15>;
+            layers = <0 1>;
         };
 
         combo_F3 {
             bindings = <&kp F3>;
             key-positions = <3 16>;
+            layers = <0 1>;
         };
 
         combo_F4 {
             bindings = <&kp F4>;
             key-positions = <4 17>;
+            layers = <0 1>;
         };
 
         combo_F5 {
             bindings = <&kp F5>;
             key-positions = <5 18>;
+            layers = <0 1>;
         };
 
         combo_F6 {
             bindings = <&kp F6>;
             key-positions = <7 20>;
+            layers = <0 1>;
         };
 
         combo_F7 {
             bindings = <&kp F7>;
             key-positions = <8 21>;
+            layers = <0 1>;
         };
 
         combo_F8 {
             bindings = <&kp F8>;
             key-positions = <9 22>;
+            layers = <0 1>;
         };
 
         combo_F9 {
             bindings = <&kp F9>;
             key-positions = <10 23>;
+            layers = <0 1>;
         };
 
         combo_F10 {
             bindings = <&kp F10>;
             key-positions = <11 24>;
+            layers = <0 1>;
         };
 
         combo_lpar {
@@ -270,12 +278,6 @@
             layers = <0 1>;
         };
 
-        combo_escape {
-            bindings = <&kp ESCAPE>;
-            key-positions = <13 14>;
-            require-prior-idle-ms = <100>;
-        };
-
         combo_ctrlc {
             bindings = <&kp LC(C)>;
             key-positions = <41 42>;
@@ -288,27 +290,27 @@
 
         Main {
             bindings = <
-&kp CAPSLOCK    &none                 &none                 &none                   &none                     &none                                 &kp UP_ARROW     &none                             &none                      &none                    &none                  &none                           &kp DELETE
-&kp TAB         &kp Q                 &kp W                 &kp E                   &kp R                     &kp T                                 &kp DOWN_ARROW   &kp Y                             &kp U                      &kp I                    &kp O                  &kp P                           &kp EQUAL
-&kp LEFT_SHIFT  &HRM_LEFT LEFT_GUI A  &HRM_LEFT LEFT_ALT S  &HRM_LEFT LEFT_SHIFT D  &HRM_LEFT LEFT_CONTROL F  &kp G                                 &kp LEFT_ARROW   &kp H                             &HRM_RIGHT LEFT_CONTROL J  &HRM_RIGHT LEFT_SHIFT K  &HRM_RIGHT LEFT_ALT L  &HRM_RIGHT LEFT_GUI APOSTROPHE  &kp BACKSPACE
-&kp LCTRL       &kp Z                 &kp X                 &kp C                   &kp V                     &kp B                                 &kp RIGHT_ARROW  &kp N                             &kp M                      &comma_ex                &period_ex             &question_ex                    &kp MINUS
-&kp C_MUTE      &kp ESCAPE            &sk LEFT_GUI          &sk LEFT_ALT            &mo 3                     &custom_hold_tap_for_space 3 SPACE    &kp ENTER        &custom_hold_tap_stickylayer 3 3  &kp ENTER                  &kp LEFT_ARROW           &kp RIGHT_ARROW        &none
+&kp CAPSLOCK    &none                 &none                 &none              &none               &none        &kp UP_ARROW     &none                             &none                &none               &none                  &none                           &kp DELETE
+&kp TAB         &kp Q                 &kp W                 &kp E              &kp R               &kp T        &kp DOWN_ARROW   &kp Y                             &kp U                &kp I               &kp O                  &kp P                           &kp EQUAL
+&kp LEFT_SHIFT  &HRM_LEFT LEFT_GUI A  &HRM_LEFT LEFT_ALT S  &HRM_LEFT LCTRL D  &HRM_LEFT LSHIFT F  &kp G        &kp LEFT_ARROW   &kp H                             &HRM_RIGHT LSHIFT J  &HRM_RIGHT LCTRL K  &HRM_RIGHT LEFT_ALT L  &HRM_RIGHT LEFT_GUI APOSTROPHE  &kp BACKSPACE
+&kp LCTRL       &kp Z                 &kp X                 &kp C              &kp V               &kp B        &kp RIGHT_ARROW  &kp N                             &kp M                &comma_ex           &period_ex             &question_ex                    &kp MINUS
+&kp C_MUTE      &kp ESCAPE            &sk LEFT_GUI          &kp LEFT_ALT       &mo 3               &kp SPACE    &kp ENTER        &custom_hold_tap_stickylayer 3 3  &kp ENTER            &none               &none                  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
             display-name = "Main";
         };
 
-        hrm_block {
+        hrm_shield {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans    &trans
-&trans  &kp A   &kp S   &kp D   &kp F   &trans       &trans  &trans  &kp J   &kp K   &kp L   &kp APOS  &trans
-&trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &kp SPACE    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans                            &trans  &trans  &trans  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans                            &trans  &trans  &trans  &trans    &trans
+&trans  &kp A   &kp S   &kp D   &kp F   &trans       &trans  &trans                            &kp J   &kp K   &kp L   &kp APOS  &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans                            &trans  &trans  &trans  &trans    &trans
+&trans  &trans  &trans  &trans  &mo 3   &kp SPACE    &trans  &custom_hold_tap_stickylayer 3 3  &trans  &trans  &trans  &trans
             >;
 
-            label = "hrm_block";
+            label = "hrm_shield";
         };
 
         Gaming {
@@ -317,7 +319,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans                            &trans  &trans  &trans  &trans          &trans
 &trans  &kp A   &kp S   &kp D   &kp F   &trans       &trans  &trans                            &kp J   &kp K   &kp L   &kp APOSTROPHE  &trans
 &trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans                            &trans  &trans  &trans  &trans          &trans
-&trans  &trans  &trans  &trans  &mo 3   &kp SPACE    &trans  &custom_hold_tap_stickylayer 3 3  &trans  &trans  &trans  &tog 2
+&trans  &trans  &trans  &trans  &mo 3   &kp SPACE    &trans  &custom_hold_tap_stickylayer 3 3  &trans  &trans  &trans  &trans
             >;
 
             label = "Gaming";
@@ -325,11 +327,11 @@
 
         Ex {
             bindings = <
-&rgb_ug RGB_TOG  &kp F1        &kp F2         &kp F3        &kp F4        &kp F5        &mmv MOVE_UP     &kp F6     &kp F7    &kp F8    &kp F9     &kp F10  &mo 4
+&rgb_ug RGB_TOG  &kp F1        &kp F2         &kp F3        &kp F4        &kp F5        &mmv MOVE_UP     &kp F6     &kp F7    &kp F8    &kp F9     &kp F10  &trans
 &trans           &kp TILDE     &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp INSERT    &mmv MOVE_DOWN   &kp PG_UP  &kp HOME  &kp UP    &kp END    &kp F11  &kp F12
-&trans           &kp NUMBER_0  &kp NUMBER_4   &kp N5        &kp NUMBER_6  &trans        &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &trans   &kp DELETE
+&trans           &kp NUMBER_0  &kp NUMBER_4   &kp N5        &kp NUMBER_6  &trans        &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &trans   &trans
 &trans           &kp GRAVE     &kp N7         &kp NUMBER_8  &kp NUMBER_9  &trans        &mmv MOVE_RIGHT  &trans     &trans    &trans    &trans     &trans   &kp PRINTSCREEN
-&kp C_MUTE       &trans        &kp BACKSPACE  &trans        &trans        &kp SPACE     &mkp LCLK        &tog 1     &trans    &trans    &trans     &tog 2
+&kp C_MUTE       &trans        &kp BACKSPACE  &trans        &trans        &kp SPACE     &mkp LCLK        &tog 1     &trans    &trans    &mo 4      &tog 2
             >;
 
             display-name = "Ex";
@@ -338,11 +340,11 @@
 
         Misc {
             bindings = <
-&trans           &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4    &mmv MOVE_UP     &trans  &trans  &trans  &trans  &trans  &trans
+&bootloader      &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4    &mmv MOVE_UP     &trans  &trans  &trans  &trans  &trans  &bootloader
 &trans           &bt BT_CLR       &bt BT_CLR_ALL   &out OUT_BLE     &out OUT_USB     &soft_off       &mmv MOVE_DOWN   &trans  &trans  &trans  &trans  &trans  &trans
 &rgb_ug RGB_TOG  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &trans          &mmv MOVE_LEFT   &trans  &trans  &trans  &trans  &trans  &trans
 &rgb_ug RGB_EFF  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &trans          &mmv MOVE_RIGHT  &trans  &trans  &trans  &trans  &trans  &trans
-&trans           &trans           &trans           &trans           &trans           &tog 2          &mkp LCLK        &trans  &trans  &trans  &trans  &trans
+&trans           &trans           &trans           &trans           &trans           &trans          &mkp LCLK        &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
