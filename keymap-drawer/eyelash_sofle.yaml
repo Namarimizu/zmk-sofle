@@ -1,3 +1,4 @@
+layout: {zmk_keyboard: eyelash_sofle}
 layers:
   Main:
   - $$mdi:apple-keyboard-caps$$
@@ -29,13 +30,13 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - {t: A, h: '$$mdi:apple-keyboard-command$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: F, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: D, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
   - G
   - $$mdi:arrow-left-bold$$
   - H
-  - {t: J, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: K, h: '$$mdi:apple-keyboard-control$$'}
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
   - {t: <, h: '$$mdi:apple-keyboard-command$$'}
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -55,16 +56,16 @@ layers:
   - $$mdi:volume-off$$
   - $$mdi:keyboard-esc$$
   - {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:gesture-tap-hold$$'}
-  - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
+  - $$mdi:apple-keyboard-option$$
   - Ex
-  - {t: '$$mdi:keyboard-space$$', h: Ex}
+  - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: Ex, h: Ex}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  hrm_block:
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  hrm_shield:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -121,10 +122,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Ex
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Ex, h: Ex}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -193,7 +194,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: Gaming, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
   Ex:
   - RGB TOG
   - F1
@@ -207,7 +208,7 @@ layers:
   - F8
   - F9
   - F10
-  - Misc
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '~'
   - '1'
@@ -233,7 +234,7 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '`', s: '~'}
   - {t: '7', s: '&'}
@@ -252,15 +253,15 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {t: '$$mdi:keyboard-space$$', type: held alternate}
+  - $$mdi:keyboard-space$$
   - $$mdi:mouse-left-click-outline$$
-  - {t: hrm_block, h: toggle, type: held alternate}
+  - {t: hrm_shield, h: toggle, type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Misc
   - {t: Gaming, h: toggle}
   Misc:
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:progress-download$$
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
@@ -272,7 +273,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - $$mdi:progress-download$$
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:bluetooth-off$$
   - BT CLR ALL
@@ -317,12 +318,12 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {t: Gaming, h: toggle, type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   '4':
   - {t: '$$mdi:transfer$$', type: trans}
@@ -392,45 +393,53 @@ layers:
 combos:
 - p: [29, 30]
   k: {t: ']', s: '}'}
-  l: [Main, hrm_block]
+  l: [Main, hrm_shield, Ex]
 - p: [29, 28]
   k: {t: '[', s: '{'}
-  l: [Main, hrm_block]
+  l: [Main, hrm_shield, Ex]
 - p: [1, 14]
   k: F1
+  l: [Main, hrm_shield]
 - p: [2, 15]
   k: F2
+  l: [Main, hrm_shield]
 - p: [3, 16]
   k: F3
+  l: [Main, hrm_shield]
 - p: [4, 17]
   k: F4
+  l: [Main, hrm_shield]
 - p: [5, 18]
   k: F5
+  l: [Main, hrm_shield]
 - p: [7, 20]
   k: F6
+  l: [Main, hrm_shield]
 - p: [8, 21]
   k: F7
+  l: [Main, hrm_shield]
 - p: [9, 22]
   k: F8
+  l: [Main, hrm_shield]
 - p: [10, 23]
   k: F9
+  l: [Main, hrm_shield]
 - p: [11, 24]
   k: F10
+  l: [Main, hrm_shield]
 - p: [35, 34]
   k: {t: (, s: <}
-  l: [Main, hrm_block]
+  l: [Main, hrm_shield]
 - p: [35, 36]
   k: {t: ), s: '>'}
-  l: [Main, hrm_block]
+  l: [Main, hrm_shield]
 - p: [43, 42]
   k: Ctl+V
 - p: [16, 28]
   k: {t: /, s: '?'}
-  l: [Main, hrm_block]
+  l: [Main, hrm_shield]
 - p: [22, 36]
   k: {h: \, s: '|'}
-  l: [Main, hrm_block]
-- p: [13, 14]
-  k: $$mdi:keyboard-esc$$
+  l: [Main, hrm_shield]
 - p: [41, 42]
   k: Ctl+C
