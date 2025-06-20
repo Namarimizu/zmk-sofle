@@ -262,6 +262,7 @@
             bindings = <&kp LC(V)>;
             key-positions = <43 42>;
             require-prior-idle-ms = <100>;
+            layers = <0>;
         };
 
         combo_slash {
@@ -282,6 +283,7 @@
             bindings = <&kp LC(C)>;
             key-positions = <41 42>;
             require-prior-idle-ms = <100>;
+            layers = <0>;
         };
     };
 
