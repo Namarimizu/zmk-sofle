@@ -435,6 +435,7 @@ combos:
   l: [Main, hrm_shield]
 - p: [43, 42]
   k: Ctl+V
+  l: [Main]
 - p: [16, 28]
   k: {t: /, s: '?'}
   l: [Main, hrm_shield]
@@ -443,3 +444,4 @@ combos:
   l: [Main, hrm_shield]
 - p: [41, 42]
   k: Ctl+C
+  l: [Main]
